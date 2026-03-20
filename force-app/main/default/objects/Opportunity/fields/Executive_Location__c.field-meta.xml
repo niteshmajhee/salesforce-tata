@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Executive_Location__c</fullName>
+    <label>Executive Location</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ghaziabad</fullName>
+                <default>false</default>
+                <label>Ghaziabad</label>
+            </value>
+            <value>
+                <fullName>Delhi</fullName>
+                <default>false</default>
+                <label>Delhi</label>
+            </value>
+            <value>
+                <fullName>Gurgaon</fullName>
+                <default>false</default>
+                <label>Gurgaon</label>
+            </value>
+            <value>
+                <fullName>Jaipur</fullName>
+                <default>false</default>
+                <label>Jaipur</label>
+            </value>
+            <value>
+                <fullName>Jodhpur</fullName>
+                <default>false</default>
+                <label>Jodhpur</label>
+            </value>
+            <value>
+                <fullName>Lucknow</fullName>
+                <default>false</default>
+                <label>Lucknow</label>
+            </value>
+            <value>
+                <fullName>Varanasi</fullName>
+                <default>false</default>
+                <label>Varanasi</label>
+            </value>
+            <value>
+                <fullName>Uttarakhand</fullName>
+                <default>false</default>
+                <label>Uttarakhand</label>
+            </value>
+            <value>
+                <fullName>Punjab &amp; HP</fullName>
+                <default>false</default>
+                <label>Punjab &amp; HP</label>
+            </value>
+            <value>
+                <fullName>South Bengal</fullName>
+                <default>false</default>
+                <label>South Bengal</label>
+            </value>
+            <value>
+                <fullName>Bihar</fullName>
+                <default>false</default>
+                <label>Bihar</label>
+            </value>
+            <value>
+                <fullName>North Bengal</fullName>
+                <default>false</default>
+                <label>North Bengal</label>
+            </value>
+            <value>
+                <fullName>Odisha</fullName>
+                <default>false</default>
+                <label>Odisha</label>
+            </value>
+            <value>
+                <fullName>Jharkhand</fullName>
+                <default>false</default>
+                <label>Jharkhand</label>
+            </value>
+            <value>
+                <fullName>Coimbatore</fullName>
+                <default>false</default>
+                <label>Coimbatore</label>
+            </value>
+            <value>
+                <fullName>Andhra Pradesh</fullName>
+                <default>false</default>
+                <label>Andhra Pradesh</label>
+            </value>
+            <value>
+                <fullName>Telengana</fullName>
+                <default>false</default>
+                <label>Telengana</label>
+            </value>
+            <value>
+                <fullName>Kerala</fullName>
+                <default>false</default>
+                <label>Kerala</label>
+            </value>
+            <value>
+                <fullName>Karnataka</fullName>
+                <default>false</default>
+                <label>Karnataka</label>
+            </value>
+            <value>
+                <fullName>Mumbai</fullName>
+                <default>false</default>
+                <label>Mumbai</label>
+            </value>
+            <value>
+                <fullName>Pune</fullName>
+                <default>false</default>
+                <label>Pune</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

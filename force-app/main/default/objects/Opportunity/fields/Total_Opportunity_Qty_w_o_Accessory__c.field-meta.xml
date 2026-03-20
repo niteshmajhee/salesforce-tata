@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Opportunity_Qty_w_o_Accessory__c</fullName>
+    <label>Total Qty (w/o Accessory)</label>
+    <summarizedField>OpportunityLineItem.Quantity</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.B2C_Is_Product_Standard_Line_Item__c</field>
+        <operation>equals</operation>
+        <value>True</value>
+    </summaryFilterItems>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.B2C_Is_Accessory_Line_Item__c</field>
+        <operation>equals</operation>
+        <value>False</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

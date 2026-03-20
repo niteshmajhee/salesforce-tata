@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Booked_Order</fullName>
+    <active>true</active>
+    <businessProcess>Tatasteel Sales Process</businessProcess>
+    <compactLayoutAssignment>New_Awesome_Companct_Layout</compactLayoutAssignment>
+    <label>B2B Booked Order</label>
+    <picklistValues>
+        <picklist>B2C_Retail_Order_Reasons__c</picklist>
+        <values>
+            <fullName>Due to Price</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Due to Product</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Due to Size</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>CPDD_Updation_Reason__c</picklist>
+        <values>
+            <fullName>Credit limit not available for distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispatch delay by TSL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early CPDD intentionally communicated by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Early CPDD intentionally logged by SE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lack of storage space at distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Order cancelled by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other reasons</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment not received from customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Payment not received from dealer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Stock PO logged for dealers</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Unforeseen Site Delay</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Updated by Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows %2B Doors %28in separate booking ID%29 not available together</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Wrong CPDD logged by mistake %28Distributor team%29</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Group__c</picklist>
+        <values>
+            <fullName>Godrej</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jusco</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Swaparnika</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_Segment__c</picklist>
+        <values>
+            <fullName>Enterprise</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retail</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SBP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Customer_willing_to_meet_Sales_Team__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>DB_Competitor__c</picklist>
+        <values>
+            <fullName>Competitor A</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Competitor C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Defect_Category__c</picklist>
+        <values>
+            <fullName>Accessory</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Part</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Discount_Type__c</picklist>
+        <values>
+            <fullName>Add</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Subtract</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Dispatch_Type__c</picklist>
+        <values>
+            <fullName>D2C</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Standard</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Executive_Location__c</picklist>
+        <values>
+            <fullName>Andhra Pradesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bihar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Coimbatore</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delhi</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ghaziabad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Gurgaon</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jaipur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jharkhand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Jodhpur</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Karnataka</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Kerala</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Lucknow</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Mumbai</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>North Bengal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Odisha</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pune</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Punjab %26 HP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>South Bengal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Telengana</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Uttarakhand</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Varanasi</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expected_Buying_Timeline__c</picklist>
+        <values>
+            <fullName>2 - 3 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>3 - 6 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>6 - 12 Months</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Immediate</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than 1 Year</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Expected_Quantity__c</picklist>
+        <values>
+            <fullName>%3C%3D 25 Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>151 - 300 Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>26 - 50 Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>51 - 150 Units</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than 301 Units</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Flow_State__c</picklist>
+        <values>
+            <fullName>WEST BENGAL</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>AR-VR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Customer Event</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Digital Campaign</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Field Lead</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>French Door</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Google AdWords</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Griha Pravesh</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Inbound Calls</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JaipurConverse</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Projects</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Purchased List</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Webinar</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Website</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Loss_Reason__c</picklist>
+        <values>
+            <fullName>Lost to Competitor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Budget %2F Lost Funding</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Decision %2F Non-Responsive</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>NPD_Flag__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Opportunity_Type__c</picklist>
+        <values>
+            <fullName>Order</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Stock</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Order_Domain__c</picklist>
+        <values>
+            <fullName>B2B</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2C</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Payment_Term_Picklist__c</picklist>
+        <values>
+            <fullName>LI90</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YX10</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Z001</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ZZ36</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Per_Sqft_Selling_Rate__c</picklist>
+        <values>
+            <fullName>4000 - 5000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>5000 - 7000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>7000 - 9000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less than 4000</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>More than 9000</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Preferred_Plant__c</picklist>
+        <values>
+            <fullName>Ahlada - A611</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bhawani - BN39</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Component-C0D9</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DORMAKABA-D575</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dorset-D786</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMP - G325</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GWS - G0G7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Geze-G0B2</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iclean - I333</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Iclean - I333TG</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCL - N3B3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEPL - SK79</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STARFAB - SMK7</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SagarAsia - SMLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TSPL - T486</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority_Order_Reason_List__c</picklist>
+        <values>
+            <fullName>Complaint</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Others</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority_Order__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QD_FeedBack_Status_WhatsApp__c</picklist>
+        <values>
+            <fullName>Pending for Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response Received from Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response Received from Voice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>QD_FeedBack_Status__c</picklist>
+        <values>
+            <fullName>Pending for Feedback</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response Not Received</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response Received from Digital</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Response Received from Voice</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Quality_alert__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Region__c</picklist>
+        <values>
+            <fullName>EAST</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NORTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOUTH</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>WEST</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Replacement_Material_Group__c</picklist>
+        <values>
+            <fullName>RED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REV</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REW</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Response_Type__c</picklist>
+        <values>
+            <fullName>Normal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rapid</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Retail_Order__c</picklist>
+        <values>
+            <fullName>No</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yes</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Site_type__c</picklist>
+        <values>
+            <fullName>Residential</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status__c</picklist>
+        <values>
+            <fullName>Accepted By Dorset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accepted By Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accepted by Sales Planning</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accessory Cost Updated By Dorset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Accessory Payment Confirmed by BM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2B Order Placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>B2B PO Placed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking Pending With CEM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Booking Pending With SM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Data Validation Error</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing Added</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Drawing Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error From SAP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Error From SAP in UMC creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fully_Delivered_To_Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fully_Delivered_To_Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>In-Transit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Activated</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Dispatched to Consumer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Material Received by Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>On Hold by Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Open</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCR Approval Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PCR Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Delivered To Customer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partially Delivered To Distributor</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending For Plant Allocation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending for RFQ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending with BM for Approval</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending with Chief Services and Solutions</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending with H%26C Channel Manager</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending with Head Pravesh and Allied Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending with SM for Release</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Place PO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Place PO from Stock</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Price review by SM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RFQ Accepted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SO Creation</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent To Dorset</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent To Plant</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sent to SAP</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>TempPlant__c</picklist>
+        <values>
+            <fullName>Ahlada - A611</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GMP - G325</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NCL - N3B3</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEPL - SK79</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TSPL - T486</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ULT - U0A3</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type_of_Product__c</picklist>
+        <values>
+            <fullName>All %2F Any 2 of the above</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Fire Door</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Residential Door</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Windows</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

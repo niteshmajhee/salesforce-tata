@@ -3,28 +3,9 @@
     
     <!-- Custom Object -->
     <types>
-        <members>Test_Obj__c</members>
+        <members>Opportunity</members>
         <name>CustomObject</name>
     </types>
 
-    <!-- Custom Fields -->
-    <types>
-        <members>Test_Obj__c.Test_Field1__c</members>
-        <members>Test_Obj__c.Test_Field2__c</members>
-        <name>CustomField</name>
-    </types>
-
-    <!-- Apex Classes -->
-    <types>
-        <members>TestObjectTriggerHandler</members>
-        <members>TestObjectTriggerHandlerTest</members>
-        <name>ApexClass</name>
-    </types>
-
-    <!-- Apex Trigger -->
-    <types>
-        <members>TestObjectTrigger</members>
-        <name>ApexTrigger</name>
-    </types>
     <version>66.0</version>
 </Package>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Actual_CPDW__c</fullName>
+    <description>This field is used to calculate the CPDW</description>
+    <externalId>false</externalId>
+    <formula>IF(
+ISBLANK(B2B_Actual_CPDD__c),
+TEXT(B2B_Actual_CPDD__c),
+TEXT(B2B_Actual_CPDD__c) &amp; &apos; to &apos; &amp; TEXT(B2B_Actual_CPDD__c + 6)
+)</formula>
+    <label>B2B CPDW</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

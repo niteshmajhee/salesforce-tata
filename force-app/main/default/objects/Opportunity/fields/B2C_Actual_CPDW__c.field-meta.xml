@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2C_Actual_CPDW__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(
+ISBLANK(Customer_Promised_Delivery_Date_Final__c),
+TEXT(Customer_Promised_Delivery_Date_Final__c),
+TEXT(DAY(Customer_Promised_Delivery_Date_Final__c)) + &quot;/&quot; + TEXT(MONTH(Customer_Promised_Delivery_Date_Final__c)) + &quot;/&quot; + TEXT(YEAR(Customer_Promised_Delivery_Date_Final__c)) &amp; &apos; to &apos; &amp; TEXT(DAY(Customer_Promised_Delivery_Date_Final__c + 6)) + &quot;/&quot; + TEXT(MONTH(Customer_Promised_Delivery_Date_Final__c + 6)) + &quot;/&quot; + TEXT(YEAR(Customer_Promised_Delivery_Date_Final__c + 6))
+)</formula>
+    <label>B2C CPDW</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

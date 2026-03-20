@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cannot_change_Account_name_in_Opportunit</fullName>
+    <active>false</active>
+    <description>cannot change account name in opportunity except system admin.</description>
+    <errorConditionFormula>AND($Profile.Name &lt;&gt; &apos;System Administrator &apos;,
+  NOT(ISBLANK(AccountId)),
+  ISCHANGED(AccountId)
+)</errorConditionFormula>
+    <errorMessage>Does not have enough access right.</errorMessage>
+</ValidationRule>

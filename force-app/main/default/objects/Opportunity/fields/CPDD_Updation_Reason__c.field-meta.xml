@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPDD_Updation_Reason__c</fullName>
+    <label>CPDD Updation Reason</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Unforeseen Site Delay</fullName>
+                <default>false</default>
+                <label>Unforeseen Site Delay</label>
+            </value>
+            <value>
+                <fullName>Early CPDD intentionally logged by SE</fullName>
+                <default>false</default>
+                <label>Early CPDD intentionally logged by SE</label>
+            </value>
+            <value>
+                <fullName>Early CPDD intentionally communicated by Customer</fullName>
+                <default>false</default>
+                <label>Early CPDD intentionally communicated by Customer</label>
+            </value>
+            <value>
+                <fullName>Wrong CPDD logged by mistake (Distributor team)</fullName>
+                <default>false</default>
+                <label>Wrong CPDD logged by mistake (Distributor team)</label>
+            </value>
+            <value>
+                <fullName>Windows + Doors (in separate booking ID) not available together</fullName>
+                <default>false</default>
+                <label>Windows + Doors (in separate booking ID) not available together</label>
+            </value>
+            <value>
+                <fullName>Payment not received from dealer</fullName>
+                <default>false</default>
+                <label>Payment not received from dealer</label>
+            </value>
+            <value>
+                <fullName>Payment not received from customer</fullName>
+                <default>false</default>
+                <label>Payment not received from customer</label>
+            </value>
+            <value>
+                <fullName>Stock PO logged for dealers</fullName>
+                <default>false</default>
+                <label>Stock PO logged for dealers</label>
+            </value>
+            <value>
+                <fullName>Lack of storage space at distributor</fullName>
+                <default>false</default>
+                <label>Lack of storage space at distributor</label>
+            </value>
+            <value>
+                <fullName>Credit limit not available for distributor</fullName>
+                <default>false</default>
+                <label>Credit limit not available for distributor</label>
+            </value>
+            <value>
+                <fullName>Dispatch delay by TSL</fullName>
+                <default>false</default>
+                <label>Dispatch delay by TSL</label>
+            </value>
+            <value>
+                <fullName>Other reasons</fullName>
+                <default>false</default>
+                <label>Other reasons</label>
+            </value>
+            <value>
+                <fullName>Order cancelled by Customer</fullName>
+                <default>false</default>
+                <label>Order cancelled by Customer</label>
+            </value>
+            <value>
+                <fullName>Updated by Customer</fullName>
+                <default>false</default>
+                <label>Updated by Customer</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

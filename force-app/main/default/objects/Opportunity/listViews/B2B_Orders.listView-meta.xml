@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2B_Orders</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>OrderNumber__c</columns>
+    <columns>Status__c</columns>
+    <columns>Response_from_SAP__c</columns>
+    <columns>State__c</columns>
+    <columns>Total_Quantity__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Order_Domain__c</field>
+        <operation>equals</operation>
+        <value>B2B</value>
+    </filters>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>SO Creation,In-Transit</value>
+    </filters>
+    <label>B2B Orders</label>
+</ListView>

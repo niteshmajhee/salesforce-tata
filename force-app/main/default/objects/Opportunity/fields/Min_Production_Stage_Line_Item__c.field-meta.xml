@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Min_Production_Stage_Line_Item__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Min_Production_Stage_Number__c = 1, &apos;In Verification&apos;, IF(Min_Production_Stage_Number__c = 2, &apos;In Production&apos;, IF(Min_Production_Stage_Number__c = 3, &apos;Manufactured&apos;, IF(Min_Production_Stage_Number__c = 4, &apos;Ready to Dispatch&apos;, IF(Min_Production_Stage_Number__c = 5, &apos;Dispatched&apos;, &apos;Nil&apos; ) ) ) ) )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Min Production Stage Line Item</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>B2C_Retail_Order_Reasons__c</fullName>
+    <label>Retail Order Reasons</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Due to Size</fullName>
+                <default>false</default>
+                <label>Due to Size</label>
+            </value>
+            <value>
+                <fullName>Due to Product</fullName>
+                <default>false</default>
+                <label>Due to Product</label>
+            </value>
+            <value>
+                <fullName>Due to Price</fullName>
+                <default>false</default>
+                <label>Due to Price</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

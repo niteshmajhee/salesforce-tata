@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Opportunity_Ready_For_Place_PO</fullName>
+    <columns>OPPORTUNITY.NAME</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>Booking_Amount__c</columns>
+    <columns>Email__c</columns>
+    <columns>Contact__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Status__c</field>
+        <operation>equals</operation>
+        <value>Booking</value>
+    </filters>
+    <label>Opportunity Ready For Place PO</label>
+    <sharedTo>
+        <group>BM_Group</group>
+    </sharedTo>
+</ListView>

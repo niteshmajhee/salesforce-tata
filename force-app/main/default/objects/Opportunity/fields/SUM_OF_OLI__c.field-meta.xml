@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUM_OF_OLI__c</fullName>
+    <label>SUM OF OLI</label>
+    <summarizedField>OpportunityLineItem.Total_Quantity__c</summarizedField>
+    <summaryFilterItems>
+        <field>OpportunityLineItem.Status__c</field>
+        <operation>contains</operation>
+        <value>In-Transit, Material Dispatched to Consumer Partially, Material Received By Distributor Partially, Material Received By Distributor Fully, Material Dispatched to Consumer Fully, Partial In-Transit, Closed</value>
+    </summaryFilterItems>
+    <summaryForeignKey>OpportunityLineItem.OpportunityId</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Summary</type>
+</CustomField>

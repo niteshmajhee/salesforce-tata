@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Opportunity Status</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Sent to SAP</fullName>
+                <default>false</default>
+                <label>Sent to SAP</label>
+            </value>
+            <value>
+                <fullName>SO Creation</fullName>
+                <default>false</default>
+                <label>SO Creation</label>
+            </value>
+            <value>
+                <fullName>Fully_Delivered_To_Customer</fullName>
+                <default>false</default>
+                <label>Fully Delivered To Customer</label>
+            </value>
+            <value>
+                <fullName>Fully_Delivered_To_Distributor</fullName>
+                <default>false</default>
+                <label>Fully Delivered To Distributor</label>
+            </value>
+            <value>
+                <fullName>Open</fullName>
+                <default>true</default>
+                <label>Open</label>
+            </value>
+            <value>
+                <fullName>Waiting for customer confirmation</fullName>
+                <default>false</default>
+                <label>Waiting for customer confirmation</label>
+            </value>
+            <value>
+                <fullName>Booking</fullName>
+                <default>false</default>
+                <label>Booked</label>
+            </value>
+            <value>
+                <fullName>Place PO</fullName>
+                <default>false</default>
+                <label>PO Placed</label>
+            </value>
+            <value>
+                <fullName>Error From SAP</fullName>
+                <default>false</default>
+                <label>Error From SAP</label>
+            </value>
+            <value>
+                <fullName>Partially Delivered To Distributor</fullName>
+                <default>false</default>
+                <label>Partially Delivered To Distributor</label>
+            </value>
+            <value>
+                <fullName>Partially Delivered To Customer</fullName>
+                <default>false</default>
+                <label>Partially Delivered To Customer</label>
+            </value>
+            <value>
+                <fullName>In-Transit</fullName>
+                <default>false</default>
+                <label>In-Transit</label>
+            </value>
+            <value>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+                <label>Cancelled</label>
+            </value>
+            <value>
+                <fullName>Drawing Added</fullName>
+                <default>false</default>
+                <label>Drawing Added</label>
+            </value>
+            <value>
+                <fullName>Drawing Approved</fullName>
+                <default>false</default>
+                <label>Drawing Approved</label>
+            </value>
+            <value>
+                <fullName>Material Activated</fullName>
+                <default>false</default>
+                <label>Material Activated</label>
+            </value>
+            <value>
+                <fullName>B2B PO Placed</fullName>
+                <default>false</default>
+                <label>B2B PO Placed</label>
+            </value>
+            <value>
+                <fullName>PCR Approval Pending</fullName>
+                <default>false</default>
+                <label>PCR Approval Pending</label>
+            </value>
+            <value>
+                <fullName>PCR Approved</fullName>
+                <default>false</default>
+                <label>PCR Approved</label>
+            </value>
+            <value>
+                <fullName>Pending with H&amp;C Channel Manager</fullName>
+                <default>false</default>
+                <label>Pending with H&amp;C Channel Manager</label>
+            </value>
+            <value>
+                <fullName>Pending with Head Pravesh and Allied Business</fullName>
+                <default>false</default>
+                <label>Pending with Head Pravesh and Allied Business</label>
+            </value>
+            <value>
+                <fullName>Pending with Chief Services and Solutions</fullName>
+                <default>false</default>
+                <label>Pending with Chief Services and Solutions</label>
+            </value>
+            <value>
+                <fullName>Drawing Pending</fullName>
+                <default>false</default>
+                <label>Drawing Pending</label>
+            </value>
+            <value>
+                <fullName>Place PO from Stock</fullName>
+                <default>false</default>
+                <label>Place PO from Stock</label>
+            </value>
+            <value>
+                <fullName>Data Validation Error</fullName>
+                <default>false</default>
+                <label>Data Validation Error</label>
+            </value>
+            <value>
+                <fullName>Error From SAP in UMC creation</fullName>
+                <default>false</default>
+                <label>Error From SAP in UMC creation</label>
+            </value>
+            <value>
+                <fullName>Pending with SM for Release</fullName>
+                <default>false</default>
+                <label>Pending with SM for Release</label>
+            </value>
+            <value>
+                <fullName>Booking Pending With SM</fullName>
+                <default>false</default>
+                <label>Booking Pending With SM</label>
+            </value>
+            <value>
+                <fullName>Sent To Plant</fullName>
+                <default>false</default>
+                <label>Sent To Plant</label>
+            </value>
+            <value>
+                <fullName>Accepted By Plant</fullName>
+                <default>false</default>
+                <label>Accepted By Plant</label>
+            </value>
+            <value>
+                <fullName>On Hold by Plant</fullName>
+                <default>false</default>
+                <label>On Hold by Plant</label>
+            </value>
+            <value>
+                <fullName>Accepted by Sales Planning</fullName>
+                <default>false</default>
+                <label>Accepted by Sales Planning</label>
+            </value>
+            <value>
+                <fullName>ARC &amp; PCR unavailable</fullName>
+                <default>false</default>
+                <label>ARC &amp; PCR unavailable</label>
+            </value>
+            <value>
+                <fullName>ARC unavailable</fullName>
+                <default>false</default>
+                <label>ARC unavailable</label>
+            </value>
+            <value>
+                <fullName>PCR unavailable</fullName>
+                <default>false</default>
+                <label>PCR unavailable</label>
+            </value>
+            <value>
+                <fullName>Material Received by Distributor</fullName>
+                <default>false</default>
+                <label>Material Received by Distributor</label>
+            </value>
+            <value>
+                <fullName>Material Dispatched to Consumer</fullName>
+                <default>false</default>
+                <label>Material Dispatched to Consumer</label>
+            </value>
+            <value>
+                <fullName>Closed</fullName>
+                <default>false</default>
+                <label>Closed</label>
+            </value>
+            <value>
+                <fullName>Pending with BM for Approval</fullName>
+                <default>false</default>
+                <label>Pending with BM for Approval</label>
+            </value>
+            <value>
+                <fullName>Sent To Dorset</fullName>
+                <default>false</default>
+                <label>Sent To Dorset</label>
+            </value>
+            <value>
+                <fullName>Accepted By Dorset</fullName>
+                <default>false</default>
+                <label>Accepted By Dorset</label>
+            </value>
+            <value>
+                <fullName>Accessory Payment Confirmed by BM</fullName>
+                <default>false</default>
+                <label>Accessory Payment Confirmed by BM</label>
+            </value>
+            <value>
+                <fullName>Accessory Cost Updated By Dorset</fullName>
+                <default>false</default>
+                <label>Accessory Cost Updated By Dorset</label>
+            </value>
+            <value>
+                <fullName>B2B Order Placed</fullName>
+                <default>false</default>
+                <label>B2B Order Placed</label>
+            </value>
+            <value>
+                <fullName>Pending for RFQ</fullName>
+                <default>false</default>
+                <label>Pending for RFQ</label>
+            </value>
+            <value>
+                <fullName>RFQ Accepted</fullName>
+                <default>false</default>
+                <label>RFQ Accepted</label>
+            </value>
+            <value>
+                <fullName>Price review by SM</fullName>
+                <default>false</default>
+                <label>Price review by SM</label>
+            </value>
+            <value>
+                <fullName>Pending For Plant Allocation</fullName>
+                <default>false</default>
+                <label>Pending For Plant Allocation</label>
+            </value>
+            <value>
+                <fullName>Booking Pending With CEM</fullName>
+                <default>false</default>
+                <label>Booking Pending With CEM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

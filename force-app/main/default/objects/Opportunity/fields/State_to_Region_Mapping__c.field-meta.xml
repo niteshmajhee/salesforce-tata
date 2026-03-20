@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>State_to_Region_Mapping__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE( State__c, 
+&quot;HARYANA&quot;,&quot;NORTH&quot;,
+&quot;HIMACHAL PRADESH&quot;,&quot;NORTH&quot;,
+&quot;JAMMU &amp; KASHMIR&quot;,&quot;NORTH&quot;,
+&quot;PUNJAB&quot;,&quot;NORTH&quot;,
+&quot;RAJASTHAN&quot;,&quot;NORTH&quot;,
+&quot;UTTAR PRADESH&quot;,&quot;NORTH&quot;,
+&quot;UTTARAKHAND&quot;,&quot;NORTH&quot;,
+&quot;CHANDIGARH&quot;,&quot;NORTH&quot;,
+&quot;DELHI&quot;,&quot;NORTH&quot;,
+&quot;ARUNACHAL PRADESH&quot;,&quot;EAST&quot;,
+&quot;ASSAM&quot;,&quot;EAST&quot;,
+&quot;BIHAR&quot;,&quot;EAST&quot;,
+&quot;JHARKHAND&quot;,&quot;EAST&quot;,
+&quot;MANIPUR&quot;,&quot;EAST&quot;,
+&quot;MEGHALAYA&quot;,&quot;EAST&quot;,
+&quot;MIZORAM&quot;,&quot;EAST&quot;,
+&quot;NAGALAND&quot;,&quot;EAST&quot;,
+&quot;ODISHA&quot;,&quot;EAST&quot;,
+&quot;SIKKIM&quot;,&quot;EAST&quot;,
+&quot;TRIPURA&quot;,&quot;EAST&quot;,
+&quot;WEST BENGAL&quot;,&quot;EAST&quot;,
+&quot;ANDAMAN &amp; NICOBAR ISLANDS&quot;,&quot;EAST&quot;,
+&quot;CHATTISGARH&quot;,&quot;WEST&quot;,
+&quot;GOA&quot;,&quot;WEST&quot;,
+&quot;GUJARAT&quot;,&quot;WEST&quot;,
+&quot;MADHYA PRADESH&quot;,&quot;WEST&quot;,
+&quot;MAHARASHTRA&quot;,&quot;WEST&quot;,
+&quot;DADRA &amp; NAGAR HAVELI&quot;,&quot;WEST&quot;,
+&quot;DAMAN AND DIU&quot;,&quot;WEST&quot;,
+&quot;LAKSHADWEEP&quot;,&quot;WEST&quot;,
+&quot;ANDHRA PRADESH&quot;,&quot;SOUTH&quot;,
+&quot;KARNATAKA&quot;,&quot;SOUTH&quot;,
+&quot;KERALA&quot;,&quot;SOUTH&quot;,
+&quot;TAMIL NADU&quot;,&quot;SOUTH&quot;,
+&quot;TELANGANA&quot;,&quot;SOUTH&quot;,
+&quot;PONDICHERRY&quot;,&quot;SOUTH&quot;,
+&quot;N/A&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>State to Region Mapping</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

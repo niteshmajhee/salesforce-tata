@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TempPlant__c</fullName>
+    <label>TempPlant</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ahlada - A611</fullName>
+                <default>false</default>
+                <label>Ahlada - A611</label>
+            </value>
+            <value>
+                <fullName>GMP - G325</fullName>
+                <default>false</default>
+                <label>GMP - G325</label>
+            </value>
+            <value>
+                <fullName>NCL - N3B3</fullName>
+                <default>false</default>
+                <label>NCL - N3B3</label>
+            </value>
+            <value>
+                <fullName>SEPL - SK79</fullName>
+                <default>false</default>
+                <label>SEPL - SK79</label>
+            </value>
+            <value>
+                <fullName>TSPL - T486</fullName>
+                <default>false</default>
+                <label>TSPL - T486</label>
+            </value>
+            <value>
+                <fullName>ULT - U0A3</fullName>
+                <default>false</default>
+                <label>ULT - U0A3</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

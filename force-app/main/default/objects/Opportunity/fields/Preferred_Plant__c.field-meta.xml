@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Preferred_Plant__c</fullName>
+    <label>Preferred Manufacturer</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Ahlada - A611</fullName>
+                <default>false</default>
+                <label>Ahlada - A611</label>
+            </value>
+            <value>
+                <fullName>GMP - G325</fullName>
+                <default>false</default>
+                <label>GMP - G325</label>
+            </value>
+            <value>
+                <fullName>TSPL - T486</fullName>
+                <default>false</default>
+                <label>TSPL - T486</label>
+            </value>
+            <value>
+                <fullName>SEPL - SK79</fullName>
+                <default>false</default>
+                <label>SEPL - SK79</label>
+            </value>
+            <value>
+                <fullName>NCL - N3B3</fullName>
+                <default>false</default>
+                <label>NCL - N3B3</label>
+            </value>
+            <value>
+                <fullName>Bhawani - BN39</fullName>
+                <default>false</default>
+                <label>Bhawani - BN39</label>
+            </value>
+            <value>
+                <fullName>Iclean - I333</fullName>
+                <default>false</default>
+                <label>Iclean - I333</label>
+            </value>
+            <value>
+                <fullName>SagarAsia - SMLO</fullName>
+                <default>false</default>
+                <label>SagarAsia - SMLO</label>
+            </value>
+            <value>
+                <fullName>STARFAB - SMK7</fullName>
+                <default>false</default>
+                <label>STARFAB - SMK7</label>
+            </value>
+            <value>
+                <fullName>G325-MAH</fullName>
+                <default>false</default>
+                <label>G325-MAH</label>
+            </value>
+            <value>
+                <fullName>KRUTI - K3E0</fullName>
+                <default>false</default>
+                <label>KRUTI - K3E0</label>
+            </value>
+            <value>
+                <fullName>DORMAKABA-D575</fullName>
+                <default>false</default>
+                <label>DORMAKABA-D575</label>
+            </value>
+            <value>
+                <fullName>Geze-G0B2</fullName>
+                <default>false</default>
+                <label>Geze-G0B2</label>
+            </value>
+            <value>
+                <fullName>Dorset-D786</fullName>
+                <default>false</default>
+                <label>Dorset-D786</label>
+            </value>
+            <value>
+                <fullName>Iclean - I333TG</fullName>
+                <default>false</default>
+                <label>Iclean - I333TG</label>
+            </value>
+            <value>
+                <fullName>ULT - U0A3</fullName>
+                <default>false</default>
+                <label>ULT - U0A3</label>
+            </value>
+            <value>
+                <fullName>Component-C0D9</fullName>
+                <default>false</default>
+                <label>Component-C0D9</label>
+            </value>
+            <value>
+                <fullName>GWS - G0G7</fullName>
+                <default>false</default>
+                <label>GWS - G0G7</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
