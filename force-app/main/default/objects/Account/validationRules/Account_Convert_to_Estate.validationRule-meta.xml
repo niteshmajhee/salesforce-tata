@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account_Convert_to_Estate</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+Convert_to_Estate_Trust__c,
+ISBLANK(TEXT(Reason_to_convert_to_Estate_Trust__c))
+)</errorConditionFormula>
+    <errorDisplayField>Reason_to_convert_to_Estate_Trust__c</errorDisplayField>
+    <errorMessage>Reason to convert to Estate/Trust required if checkbox is selected</errorMessage>
+</ValidationRule>

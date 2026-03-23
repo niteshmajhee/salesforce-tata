@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Number_VR</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+ISPICKVAL(New_or_Old_Client__c, &quot;Old&quot;),
+ISBLANK(Client_Number__c)
+)</errorConditionFormula>
+    <errorDisplayField>Client_Number__c</errorDisplayField>
+    <errorMessage>Please fill in the Client Number field.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Cessation_of_Company</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(OR(Cessation_of_Company__c), (LEN(Reason_for_Cessation_of_Company__c ) &lt; 1))</errorConditionFormula>
+    <errorDisplayField>Reason_for_Cessation_of_Company__c</errorDisplayField>
+    <errorMessage>Reason for Cessation of Company is a required field when Cessation of Company is checked</errorMessage>
+</ValidationRule>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Client_Healt_Score__c</fullName>
+    <description>Grades client health based on fields entered for corporate clients.</description>
+    <formula>(
+  /* ===== Required (75% total) ===== */
+  IF(NOT(ISBLANK(Name)), 11, 0) +
+  IF(NOT(ISBLANK(TEXT(Type_of_Client__c))), 11, 0) +
+  IF(NOT(ISBLANK(Certificate_of_Incorporation_Business_No__c)), 11, 0) +
+  IF(NOT(ISBLANK(Ardhisasa_Number__c)), 11, 0) +
+  IF(NOT(ISBLANK(KRA_PIN_Number__c)), 11, 0) +
+  IF(NOT(ISBLANK(TEXT(Location_of_Client__c))), 11, 0) +
+  IF(NOT(ISBLANK(Phone)), 9, 0) +
+
+  /* ===== Important (22% total, 11 each) ===== */
+  IF(NOT(ISBLANK(Contact_Person__c)), 11, 0) +
+  IF(NOT(ISBLANK(Physical_Address__c)), 11, 0) +
+
+  /* ===== Nice-to-Have (3% total, 1 each) ===== */
+  IF(NOT(ISBLANK(Other_Email__c)), 1, 0) +
+  IF(NOT(ISBLANK(Postal_Address__c)), 1, 0) +
+  IF(NOT(ISBLANK(Client_Number__c)), 1, 0)
+)/100</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Grades client health based on fields entered for corporate clients.</inlineHelpText>
+    <label>Client Health Score</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>0</scale>
+    <type>Percent</type>
+</CustomField>

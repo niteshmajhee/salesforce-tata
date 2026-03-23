@@ -3,7 +3,7 @@
     
     <!-- Custom Object -->
     <types>
-        <members>Opportunity</members>
+        <members>Account</members>
         <name>CustomObject</name>
     </types>
 
