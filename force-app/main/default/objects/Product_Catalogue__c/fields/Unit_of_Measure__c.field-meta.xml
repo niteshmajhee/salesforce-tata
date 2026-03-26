@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Unit_of_Measure__c</fullName>
+    <label>Unit of Measure</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Per Matter</fullName>
+                <default>false</default>
+                <label>Per Matter</label>
+            </value>
+            <value>
+                <fullName>Per Document</fullName>
+                <default>false</default>
+                <label>Per Document</label>
+            </value>
+            <value>
+                <fullName>Per Search</fullName>
+                <default>false</default>
+                <label>Per Search</label>
+            </value>
+            <value>
+                <fullName>Per Property</fullName>
+                <default>false</default>
+                <label>Per Property</label>
+            </value>
+            <value>
+                <fullName>Per Party</fullName>
+                <default>false</default>
+                <label>Per Party</label>
+            </value>
+            <value>
+                <fullName>Per Hour</fullName>
+                <default>false</default>
+                <label>Per Hour</label>
+            </value>
+            <value>
+                <fullName>Flat Fee</fullName>
+                <default>false</default>
+                <label>Flat Fee</label>
+            </value>
+            <value>
+                <fullName>Per Registration</fullName>
+                <default>false</default>
+                <label>Per Registration</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
